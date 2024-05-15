@@ -16,6 +16,22 @@ namespace MVC.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
 
+            modelBuilder.Entity("MVC.Models.Employee", b =>
+                {
+                    b.Property<string>("EmployeeId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("EmployeeId");
+
+                    b.ToTable("Employee");
+                });
+
             modelBuilder.Entity("MVC.Models.Person", b =>
                 {
                     b.Property<string>("PersonId")
@@ -30,6 +46,19 @@ namespace MVC.Migrations
                     b.HasKey("PersonId");
 
                     b.ToTable("Person");
+                });
+
+            modelBuilder.Entity("MVC.Models.Student", b =>
+                {
+                    b.Property<string>("StudentId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("StudentId");
+
+                    b.ToTable("Student");
                 });
 #pragma warning restore 612, 618
         }

@@ -553,3 +553,7 @@ D:\Net_core_API\MVC\obj\Debug\net8.0\refint\MVC.dll
 D:\Net_core_API\MVC\obj\Debug\net8.0\MVC.pdb
 D:\Net_core_API\MVC\obj\Debug\net8.0\MVC.genruntimeconfig.cache
 D:\Net_core_API\MVC\obj\Debug\net8.0\ref\MVC.dll
+D:\Net_core_API\MVC\bin\Debug\net8.0\EPPlus.dll
+D:\Net_core_API\MVC\bin\Debug\net8.0\EPPlus.Interfaces.dll
+D:\Net_core_API\MVC\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+D:\Net_core_API\MVC\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
