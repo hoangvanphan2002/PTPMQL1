@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Data;
 using NetMVC.Models.Process;
 using OfficeOpenXml;
-
+using X.PagedList;
 namespace Mvc.Controllers
 {
     public class PersonController : Controller
@@ -21,9 +21,9 @@ namespace Mvc.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
-            var model = await _context.Person.ToListAsync();
+            var model = _context.Person.ToList().ToPagedList(page ?? 1, 5);
             return View(model);
         }
 
